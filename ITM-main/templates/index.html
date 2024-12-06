@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+    <title>DOMOV</title>
+</head>
+<body>
+    <div class="container">
+        <div class="ITMkalkulator">
+            <h1 class="naslovITM">Indeks telesne mase</h1>
+        </div>
+        <div class="navbar">
+            <form action="/">
+                <button class="gumbi" type="submit">DOMOV</button>
+            </form>
+            <form action="/rezultat">
+                <button class="gumbi" type="submit">REZULTATI</button>
+            </form>
+        </div>
+        <div class="karkulator">
+            <form id="mojaForma" method="POST">
+                <div class="spol">
+                    <h1 id="spolid">SPOL</h1>
+                </div>
+                <div class="dolocispol">
+                    <label class="labels">
+                        <input type="radio" name="gender" value="male">
+                        Moški
+                    </label>
+                    <label class="labels">
+                        <input type="radio" name="gender" value="female">
+                        Ženska
+                    </label>
+                </div>
+                <div class="naslov">
+                    <p id="vsota">VNESI VIŠINO V CM</p>
+                </div>
+                <div class="input">
+                    <input type="number" name="visina" placeholder="VIŠINA [cm]" required>
+                </div>
+
+                <div class="naslov">
+                    <p id="vsota">VNESI TEŽO V KG</p>
+                </div>
+                <div class="input">
+                    <input type="number" name="teza" placeholder="TEŽA [kg]" required>
+                </div>
+                <div class="potrdi">
+                    <button class="gumbi" type="submit" id="izracunaj">IZRAČUNAJ</button>
+                    Koda dostopna: <a href="https://github.com/96Uros/ITM">GitHub -96Uros-</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

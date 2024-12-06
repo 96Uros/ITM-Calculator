@@ -1,0 +1,43 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REZULTATI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="ITMkalkulator">
+            <h1 class="naslovITM">REZULTAT</h1>
+        </div>
+        <div class="navbar">
+            <form action="/">
+                <button class="gumbi" type="submit">DOMOV</button>
+            </form>
+            <form action="/rezultat">
+                <button class="gumbi" type="submit">REZULTATI</button>
+            </form>
+        </div>
+        <div class="izpisi">
+            <div class="izpis-rezultatov">
+                <div class="naslov2">Indeks telesne mase</div>
+                <div class="rezultat">
+                    <p id="itm-cookie">{% if itm %}{{ manjsi_itm }}{% else %}Ni shranjenega ITM.{% endif %}</p>
+                </div>
+            </div>
+        </div>
+        <img id="img" src="/static/assets/ITM.png" alt="">
+        <div class="oznake">
+            <p class="rdeci">----- 18,5 = podhranjenost</p>
+            <p class="zeleni">18,5–24,99 = normalna telesna teža</p>
+            <p class="oranzni">25,0–29,99 = povišana telesna teža</p>
+            <p class="oranzni">30,0–34,99 = debelost 1. razreda (adipoznost)</p>
+            <p class="rdeci">35,0–39,99 = debelost 2. razreda (adipoznost)</p>
+            <p class="rdeci">več kot 40 = debelost 3. razreda (huda adipoznost)</p>
+        </div>
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+* {
+    margin: 0px;
+    font-family: monospace;
+    font-size: medium;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ITMkalkulator {
+    background-color: aliceblue;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0px 5px black;
+}
+
+.naslovITM {
+    font-size: 25px;
+    color: rgb(168, 168, 255);
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 30%;
+    align-items: center;
+}
+
+.gumbi {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(168, 168, 255); /* Vijolična barva */
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px black;
+    margin-top: 20px;
+}
+
+.gumbi:hover {
+    background-color: rgb(194, 194, 247); /* Svetlejša vijolična */
+}
+
+.karkulator {
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(66, 66, 66)
+}
+
+.spol{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+#spolid {
+    font-size: 21px;
+    font-weight: 100;
+    margin-top: 3px;
+}
+
+.dolocispol {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.labels {
+    display: inline-block;
+    font-size: 15px;
+    color: #333;
+    padding: 4px 6px;
+    border-radius: 4px;
+    background-color: rgb(194, 194, 247);
+    transition: background-color 0.3s ease;
+}
+
+.labels:hover {
+    background-color: #e0e0e0;
+}
+
+.naslov {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin-top: 10px;
+    font-weight: 200;
+    background-color: #ffffff;
+    height: 35px;
+    border-top: 1px dotted black;
+    width: 100%;
+}
+
+#vsota {
+    font-size: 19px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+#vsota {
+    text-align: center;
+}
+
+#vsota::placeholder {
+    color: rgb(148, 148, 148);
+    text-align: center;
+    font-size: 15px;
+}
+
+.potrdi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#izracunaj {
+    height: 35px;
+    width: 150px;
+    background-color: rgb(168, 168, 255); /* Vijolična barva */
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px black;
+}
+
+#izracunaj:hover {
+    background-color: rgb(194, 194, 247); /* Svetlejša vijolična */
+}
+
+.izpisi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.izpis-rezultatov {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(239, 239, 255);
+    border: 1px solid black;
+}
+
+.naslov2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: 200;
+    background-color: #ffffff;
+    height: 35px;
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+
+#itm-cookie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#img {
+    width: 400px;
+    margin-left: 15px;
+}
+
+.oznake{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #333;
+    border: 2px solid white;
+    margin-top: 15px;
+    
+    
+}
+
+
+.zeleni {
+    color: rgb(0, 255, 21);
+}
+
+.oranzni {
+    color: rgb(255, 136, 0);
+}
+
+.rdeci {
+    color: red;
+}
